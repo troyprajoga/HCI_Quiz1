@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+<div class="banner">
+  <div class="navbar">
+    <h1>Interactive Personal Website</h1>
+    <h1>Click on the Caption</h1>
+  </div>
+  <div class="container">
+    <div class="content">
+      <div class="c">
+        <h2 class="clickable">Skills</h2>
+        <div class="hidden">
+          <ul>
+            <li>HTML</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>Microsoft Word</li>
+            <li>Microsoft Powerpoint</li>
+            <li>Google Drive</li>
+            <li>Google Document</li>
+            <li>Google Slides</li>
+          </ul>
+        </div>
+      </div>
+    
+      <div class="c">
+        <h2 class="clickable">Projects</h2>
+        <div class="hidden">
+          <h3>Parking Management System</h3>
+          <ul>
+            <li>Created a program using Java that simulates a parking system</li>
+            <li>Added a graphical user interface (GUI) that allows users to interact with the parking system</li>
+            <li>Includes multiple floors for the user to traverse through</li>
+            <li>Implemented a time-based ticket system that increases the parking ticket price in correlation to time spent in parking system</li>
+            <li>Randomly generates occupancy in parking lot to simulate a real life parking structure</li>
+          </ul>
+          <h3>Dictionary Word Sorter</h3>
+          <ul>
+            <li>Created a Java program that can search and sort words with high efficiency</li>
+            <li>Added an interactable graphical user interface (GUI)</li>
+            <li>Includes implementation of methods to add, remove, search, and sort words</li>
+            <li>Implements multiple data structures to optimize search and sorting efficiency</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="resume">
+      <h1>Resume</h1>
+      <img src="Resume.png">
+    </div>
+</div>
+
+
+<script>
+  $(document).ready(function(){
+    $(".clickable").click(function(){
+      $(this).next(".hidden").slideToggle();
+    });
+  });
+</script>
+
+</body>
+</html>
